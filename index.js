@@ -27,8 +27,10 @@ app.get("/", async (req, res) => {
 
 //3. and i added a code to make it listen on port 3000
 
-app.listen(port, ()=> {
-    console.log(`server runnin on port: ${port}`)
+app.listen(port, '0.0.0.0', () => {
+    console.log(`server runnin on port: ${port}`);
 
-})
+});
+
+
     
